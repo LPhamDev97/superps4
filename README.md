@@ -1,14 +1,18 @@
-# PS4 - PS5 Exploit Host
-PS4 Firmwares: `5.05` `6.72` `7.02` `7.5X` `9.00`
+MÁY CHỦ KHAI THÁC LỖ HỎNG CỦA PS4 – PS5
 
-PS5 Firmwares: `1.XX` `5.XX`
+PHIÊN BẢN HỆ THỐNG PS4: 5.05 · 6.72 · 7.02 · 7.5X · 9.00
 
-## Steps:
+PHIÊN BẢN HỆ THỐNG PS5: 1.XX · 5.XX
 
-- In the console browser go to: https://gamerhack.github.io/
-- Select the firmware of your console.
-- Immediately all content will be installed in the offline cache, once finished exit the browser and turn off the Internet.
-- Then go back to Access Browser and Enjoy.
+CÁC BƯỚC:
 
-Download link for the PS5 host shortcut .pkg file:
+Trong trình duyệt của máy, truy cập: https://lphamdev97.github.io/superps4/
+
+Chọn firmware của máy console của bạn.
+
+Ngay lập tức toàn bộ nội dung sẽ được cài đặt vào bộ nhớ cache offline, sau khi hoàn tất hãy thoát trình duyệt và tắt Internet.
+
+Sau đó quay lại Access Browser và tận hưởng.
+
+Link tải file .pkg shortcut host cho PS5:
 https://www.mediafire.com/file/dh3tzdvfmcznmrs/NPXS40138_%2528UMTX2%2529.pkg/file
