@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html manifest="cache.manifest">
 <head>
-<title>PS4 5.05 FW GoldHEN Host by GamerHack</title>
+<title>PS4 FW 5.05 GoldHEN Host bởi LPDevNX</title>
 <link rel="stylesheet" href="../style.css">
 <script src="exploit.js"></script>
 </head>
 <body onload="if(localStorage.cached505=='yes')setTimeout(exploit, 50);">
 <script>
-window.applicationCache.onprogress=function(a){document.getElementById("msgs2").innerHTML="Installing Offline Cache: "+(Math.round(100*(a.loaded/a.total)))+"%"};
-window.applicationCache.oncached=function(){setTimeout(function(){document.getElementById("msgs2").innerHTML="Cache Installed Successfully ✔";},1500);setTimeout(function(){document.getElementById("msgs2").innerHTML="Now Close And Re-Open Your Browser ..."; },3500);localStorage.cached505="yes";};
+window.applicationCache.onprogress=function(a){document.getElementById("msgs2").innerHTML="Đang cài đặt cache offline: "+(Math.round(100*(a.loaded/a.total)))+"%"};
+window.applicationCache.oncached=function(){setTimeout(function(){document.getElementById("msgs2").innerHTML="Cài đặt cache thành công ✔";},1500);setTimeout(function(){document.getElementById("msgs2").innerHTML="Bây giờ hãy đóng và mở lại trình duyệt ..."; },3500);localStorage.cached505="yes";};
 window.applicationCache.onnoupdate=function(){localStorage.cached505="yes";};
 window.applicationCache.onerror=function(){localStorage.cached505="yes";};
 </script>
-<h1 id="msgs">PS4 5.05 FW GoldHEN Host by GamerHack</h1>
+<h1 id="msgs">PS4 FW 5.05 GoldHEN Host bởi LPDevNX</h1>
 <hr>
 <br>
-<h1 id="msgs2" style="font-size: 30px;margin-top: 77px;margin-bottom: 455px;">Loading GoldHEN v2.4b18.8... Please Wait</h1>
-<h1 style="margin-top: 105px;">Special Thanks to:<a href="https://twitter.com/_AlAzif" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@_AlAzif</a>Leeful<a href="https://twitter.com/SpecterDev" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@SpecterDev</a>SiSTR0<a href="https://twitter.com/Prb29327239" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@Prb29327239</a></h1>
+<h1 id="msgs2" style="font-size: 30px;margin-top: 77px;margin-bottom: 455px;">Đang tải GoldHEN v2.4b18.8... Vui lòng chờ</h1>
+<h1 style="margin-top: 105px;">Lời cảm ơn đặc biệt tới:<a href="https://twitter.com/_AlAzif" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@_AlAzif</a>Leeful<a href="https://twitter.com/SpecterDev" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@SpecterDev</a>SiSTR0<a href="https://twitter.com/Prb29327239" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@Prb29327239</a></h1>
 <script>
 function allset(){
 msgs2.innerHTML = LoadedMSG
@@ -52,7 +52,7 @@ req1.send();
 }
 
 function success(){
-LoadedMSG = "GoldHEN v2.4b18.8 Loaded ✔";
+LoadedMSG = "GoldHEN v2.4b18.8 đã tải xong ✔";
 PLfile = "goldhen_2.4b18.8.bin";
 load_payload();
 }
