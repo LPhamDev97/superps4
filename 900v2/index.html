@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html manifest="cache.manifest">
 <head>
-<title>PS4 9.00 FW Host v2.8 bởi LPDevNX | Khai thác thủ công</title>
+<title>PS4 9.00 FW Host v2.8 bởi LPDevNX | Khai Thác Thủ Công</title>
 <link rel="stylesheet" href="../style.css">
 <script src="int64.js"></script>
 <script src="rop.js"></script>
@@ -17,41 +17,87 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cac
 <hr>
 <br>
 <div id="menu">
-<h1 style="font-size: 18px;color: yellow;">Payload chính</h1>
-<button class="btn" onmouseover="msgs.innerHTML='GoldHEN v2.4b18.8 cho FW 9.00'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_goldhenbeta()"> GoldHEN v2.4b18.8 </button>
-<button class="btn" onmouseover="msgs.innerHTML='GoldHEN v2.3 cho FW 9.00'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_goldhen23()"> GoldHEN v2.3 </button>
-<button class="btn" onmouseover="msgs.innerHTML='Gửi payload qua cổng 9020'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_binloader()"> Bin Loader </button>
+<h1 style="font-size: 18px;color: yellow;">Main Payloads</h1>
+<button class="btn" onmouseover="msgs.innerHTML='GoldHEN v2.4b18.8 cho FW 9.00'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_goldhenbeta()"> GoldHEN v2.4b18.8 </button>
+<button class="btn" onmouseover="msgs.innerHTML='GoldHEN v2.3 cho FW 9.00'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_goldhen23()"> GoldHEN v2.3 </button>
+<button class="btn" onmouseover="msgs.innerHTML='Gửi Payload qua cổng 9020'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_binloader()"> Trình nạp BIN </button>
 <br>
 <h1 style="font-size: 18px;">Payload</h1>
-<button class="btn" onmouseover="msgs.innerHTML='Bật một số chức năng debug có trên TestKit'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_todex()"> ToDex </button>
-<button class="btn" onmouseover="msgs.innerHTML='Dump game ra USB'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_dumper()"> App-Dumper </button>
-<button class="btn" onmouseover="msgs.innerHTML='Truy cập máy PS4 qua FTP (cẩn thận khi sử dụng)'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_ftp()"> FTP </button>
-<button class="btn" onmouseover="msgs.innerHTML='Chuyển game đã cài sang USB định dạng exFAT'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_app2usb()"> App2USB </button>
-<button class="btn" onmouseover="msgs.innerHTML='Sao lưu Database và User ra USB'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_dbackup()"> Sao lưu DB </button>
-<button class="btn" onmouseover="msgs.innerHTML='Khôi phục Database và User từ USB'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_dbrestore()"> Khôi phục DB </button>
+<button class="btn" onmouseover="msgs.innerHTML='Kích hoạt một số chức năng gỡ lỗi có trên TestKit'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_todex()"> ToDex </button>
+<button class="btn" onmouseover="msgs.innerHTML='Dump game ra ổ USB'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_dumper()"> Trình dump ứng dụng </button>
+<button class="btn" onmouseover="msgs.innerHTML='Truy cập máy PS4 qua FTP (cẩn thận khi sử dụng)'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_ftp()"> FTP </button>
+<button class="btn" onmouseover="msgs.innerHTML='Chuyển game đã cài sang USB định dạng exFAT'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_app2usb()"> App2USB </button>
+<button class="btn" onmouseover="msgs.innerHTML='Tạo bản sao lưu CSDL và người dùng ra USB'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_dbackup()"> Sao lưu CSDL </button>
+<button class="btn" onmouseover="msgs.innerHTML='Khôi phục CSDL và người dùng từ USB'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_dbrestore()"> Khôi phục CSDL </button>
 <br>
-<button class="btn" onmouseover="msgs.innerHTML='Bật cập nhật hệ thống'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_enablebUpdates()"> Bật cập nhật </button>
-<button class="btn" onmouseover="msgs.innerHTML='Tắt cập nhật hệ thống'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_disableUpdates()"> Tắt cập nhật </button>
-<button class="btn" onmouseover="msgs.innerHTML='Bật/Tắt lịch sử trình duyệt'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_historyBlocker()"> Chặn lịch sử </button>
-<button class="btn" onmouseover="msgs.innerHTML='Dump kernel ra USB'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_kernelDump()"> Dump Kernel </button>
-<button class="btn" onmouseover="msgs.innerHTML='Dump module kernel ra USB'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_moduleDump()"> Dump Module </button>
-<button class="btn" onmouseover="msgs.innerHTML='PS4 Debug cho FW 9.00'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_ps4debug()"> PS4 Debug </button>
+<button class="btn" onmouseover="msgs.innerHTML='Bật cập nhật hệ thống'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_enablebUpdates()"> Bật cập nhật </button>
+<button class="btn" onmouseover="msgs.innerHTML='Tắt cập nhật hệ thống'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_disableUpdates()"> Tắt cập nhật </button>
+<button class="btn" onmouseover="msgs.innerHTML='Bật/Tắt lịch sử trình duyệt'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_historyBlocker()"> Chặn lịch sử </button>
+<button class="btn" onmouseover="msgs.innerHTML='Dump kernel máy ra USB'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_kernelDump()"> Dump Kernel </button>
+<button class="btn" onmouseover="msgs.innerHTML='Dump module kernel ra USB'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_moduleDump()"> Dump Module </button>
+<button class="btn" onmouseover="msgs.innerHTML='PS4 Debug cho FW 9.00'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_ps4debug()"> PS4 Debug </button>
 <br>
-<button class="btn" onmouseover="msgs.innerHTML='Tắt ASLR (xáo trộn không gian địa chỉ)'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_disbAslr()"> Tắt ASLR </button>
-<button class="btn" onmouseover="msgs.innerHTML='Thoát chế độ IDU nếu lỡ bật'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_exitidu()"> Thoát IDU </button>
-<button class="btn" onmouseover="msgs.innerHTML='Đổi RIF giả thành RIF free'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_rifRen()"> Đổi tên RIF </button>
-<button class="btn" onmouseover="msgs.innerHTML='UART vĩnh viễn cho FW 9.00'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_permUart()"> UART vĩnh viễn </button>
-<button class="btn" onmouseover="msgs.innerHTML='Cần thiết để kích hoạt cheat qua web PS4 Trainer'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_webrte()"> WebRTE </button>
-<a href="http://ps4trainer.com/Trainer/index.html"><button class="btn btn-onln" onmouseover="msgs.innerHTML='Trang PS4 Trainer (làm theo hướng dẫn trên web)'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'"> PS4 Trainer Web </button></a>
+<button class="btn" onmouseover="msgs.innerHTML='Vô hiệu hóa ASLR (Ngẫu nhiên hóa không gian địa chỉ)'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_disbAslr()"> Tắt ASLR </button>
+<button class="btn" onmouseover="msgs.innerHTML='Tắt chế độ IDU nếu lỡ kích hoạt'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_exitidu()"> Thoát IDU </button>
+<button class="btn" onmouseover="msgs.innerHTML='Đổi tên RIF (giả) thành RIF (miễn phí)'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_rifRen()"> Đổi tên RIF </button>
+<button class="btn" onmouseover="msgs.innerHTML='UART vĩnh viễn cho FW 9.00'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_permUart()"> UART vĩnh viễn </button>
+<button class="btn" onmouseover="msgs.innerHTML='Cần thiết để kích hoạt cheat qua trang PS4 Trainer'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_webrte()"> WebRTE </button>
+<a href="http://ps4trainer.com/Trainer/index.html"><button class="btn btn-onln" onmouseover="msgs.innerHTML='Trang PS4 Trainer (làm theo hướng dẫn tại đó)'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'"> PS4 Trainer Web </button></a>
 <br>
-<a href="webactivator.html"><button class="btn" onmouseover="msgs.innerHTML='Kích hoạt tài khoản người dùng ngay trên trình duyệt PS4'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" style="margin-left: 72px;"> Web-Activator </button></a>
-<button class="btn" onmouseover="msgs.innerHTML='Menu loader Linux'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="linux_group()"> Linux Loaders </button>
-<button class="btn btn-toolbox" onmouseover="msgs.innerHTML='Orbis ToolBox Alpha 1190 cho FW 9.00'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_toolbox()"> Orbis-Toolbox </button>
-<button class="btn" onmouseover="msgs.innerHTML='Điều chỉnh tốc độ quạt PS4'" onmouseout="msgs.innerHTML='PS4 FW 9.00 Host v2.8 bởi LPDevNX'" onclick="load_fanthreshold()"> Ngưỡng quạt </button><select id="tempC"></select>&#176;C
+<a href="webactivator.html"><button class="btn" onmouseover="msgs.innerHTML='Kích hoạt tài khoản người dùng ngay trên trình duyệt máy'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" style="margin-left: 72px;"> Kích hoạt Web </button></a>
+<button class="btn" onmouseover="msgs.innerHTML='Menu tải Linux'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="linux_group()"> Trình tải Linux </button>
+<button class="btn btn-toolbox" onmouseover="msgs.innerHTML='Orbis ToolBox Alpha 1190 cho FW 9.00'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_toolbox()"> Orbis-Toolbox </button>
+<button class="btn" onmouseover="msgs.innerHTML='Chỉnh tốc độ quạt PS4'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_fanthreshold()"> Ngưỡng quạt </button><select id="tempC"></select>&#176;C
 <br>
-<h1 style="font-size: 18px;color: yellow;">Payload online</h1>
+<h1 style="font-size: 18px;color: yellow;">Payload trực tuyến</h1>
 <button class="btn btn-onln" onclick="mods_group()" style="margin-bottom: 11px;width: 468px;"> Nhấn vào đây để tải mục này </button>
 </div>
+<div id="lnx">
+<h1 style="font-size: 18px;">Payload Linux</h1>
+<button class="btn" onmouseover="msgs.innerHTML='Xác định Southbridge của máy để cài Linux'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_southbridge()"> Southbridge là ai </button>
+<br>
+<button class="btn" onmouseover="msgs.innerHTML='Tải Linux với 1GB VRAM (PSXita)'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_linux1gb()"> Linux 1GB </button>
+<button class="btn" onmouseover="msgs.innerHTML='Tải Linux với 2GB VRAM (PSXita)'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_linux2gb()"> Linux 2GB </button>
+<button class="btn" onmouseover="msgs.innerHTML='Tải Linux với 3GB VRAM (PSXita)'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_linux3gb()"> Linux 3GB </button>
+<button class="btn" onmouseover="msgs.innerHTML='Tải Linux với 4GB VRAM (PSXita)'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX - (Khai thác thủ công)'" onclick="load_linux4gb()"> Linux 4GB </button>
+<br>
+<button class="btn" onmouseover="msgs.innerHTML='Tải Linux cho PS4 Pro với 1GB VRAM (PSXita)'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_linuxPS4Pro1gb()"> Linux 1GB (PS4-Pro) </button>
+<button class="btn" onmouseover="msgs.innerHTML='Tải Linux cho PS4 Pro với 2GB VRAM (PSXita)'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_linuxPS4Pro2gb()"> Linux 2GB (PS4-Pro) </button>
+<button class="btn" onmouseover="msgs.innerHTML='Tải Linux cho PS4 Pro với 3GB VRAM (PSXita)'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_linuxPS4Pro3gb()"> Linux 3GB (PS4-Pro) </button>
+<button class="btn" onmouseover="msgs.innerHTML='Tải Linux cho PS4 Pro với 4GB VRAM (PSXita)'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_linuxPS4Pro4gb()"> Linux 4GB (PS4-Pro) </button>
+<br>
+<button class="btn" onmouseover="msgs.innerHTML='Quay lại menu chính'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_menu()" style="margin-bottom: 229px"> Quay lại </button>
+</div>
+<div id="mods">
+<h1 style="font-size: 18px;color: yellow;">Payload trực tuyến</h1>
+<button class="btn" onmouseover="msgs.innerHTML='Mod GTA V - Arabic Guy v1.00 (L1 + R1)'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_arabicGuy100()"> Arabic Guy v1.00 </button>
+<button class="btn" onmouseover="msgs.innerHTML='Mod GTA V - Arabic Guy v1.27 (L1 + R1)'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_arabicGuy127()"> Arabic Guy v1.27 </button>
+<button class="btn" onmouseover="msgs.innerHTML='Mod GTA V - Arabic Guy v1.32 (L1 + R1)'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_arabicGuy132()"> Arabic Guy v1.32 </button>
+<button class="btn" onmouseover="msgs.innerHTML='Mod GTA V - Arabic Guy v1.33 (L1 + R1)'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_arabicGuy133()"> Arabic Guy v1.33 </button>
+<button class="btn" onmouseover="msgs.innerHTML='Mod GTA V - Expulsion v4.0 - 1.38'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_Expulsion()"> Expulsion v4.0 - 1.38 </button>
+<button class="btn" onmouseover="msgs.innerHTML='Mod GTA V - Lamance v0.9 - 1.38 (Phải + Vuông)'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_Lamance()"> Lamance v0.9 - 1.38 </button>
+<br>
+<button class="btn" onmouseover="msgs.innerHTML='Mod GTA V - WildeModz v1.32'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_WildeModz132()"> WildeModz-1.32 </button>
+<button class="btn" onmouseover="msgs.innerHTML='Mod GTA V - WildeModz v1.33'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_WildeModz133()"> WildeModz-1.33 </button>
+<button class="btn" onmouseover="msgs.innerHTML='Mod GTA V - WildeModz v1.38'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_WildeModz138()"> WildeModz-1.38 </button>
+<button class="btn" onmouseover="msgs.innerHTML='Mod GTA V - WildeModz v1.46'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_WildeModz146()"> WildeModz-1.46 </button>
+<button class="btn" onmouseover="msgs.innerHTML='Mod GTA V - WildeModz v1.47'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_WildeModz147()"> WildeModz-1.47 </button>
+<br>
+<button class="btn" onmouseover="msgs.innerHTML='Mod GTA V - Beef Queef v1.33'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_beefQueef133()"> Beef Queef Mod v1.33 </button>
+<button class="btn" onmouseover="msgs.innerHTML='Mod GTA V - Beef Queef v1.34'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_beefQueef134()"> Beef Queef Mod v1.34 </button>
+<button class="btn" onmouseover="msgs.innerHTML='Mod GTA V - Beef Queef v1.38d'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_beefQueef138()"> Beef Queef Mod v1.38d </button>
+<button class="btn" onmouseover="msgs.innerHTML='Mod GTA V - Beef Queef v1.47'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_beefQueef147()"> Beef Queef Mod v1.47 </button>
+<br>
+<button class="btn" onmouseover="msgs.innerHTML='Mod Red Dead Redemption 2 - Oysters Menu v1.00'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_Oysters100()"> RDR2 v1.00 </button>
+<button class="btn" onmouseover="msgs.innerHTML='Mod Red Dead Redemption 2 - Oysters Menu v1.13'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_Oysters113()"> RDR2 v1.13 </button>
+<button class="btn" onmouseover="msgs.innerHTML='Mod Red Dead Redemption 2 - Oysters Menu v1.19'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_Oysters119()"> RDR2 v1.19 </button>
+<button class="btn" onmouseover="msgs.innerHTML='Mod Red Dead Redemption 2 - Oysters Menu v1.24'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_Oysters124()"> RDR2 v1.24 </button>
+<button class="btn" onmouseover="msgs.innerHTML='Mod Red Dead Redemption 2 - Oysters Menu v1.29'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_Oysters129()"> RDR2 v1.29 </button>
+<br>
+<button class="btn" onmouseover="msgs.innerHTML='Quay lại menu chính'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 bởi LPDevNX'" onclick="load_menu()" style="margin-bottom: 167px"> Quay lại </button>
+</div>
+<h1 style="margin-top: 55px;">Lời cảm ơn đặc biệt tới:<a href="https://twitter.com/sleirsgoevy" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@sleirsgoevy</a>ChendoChap<a href="https://twitter.com/Znullptr" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@Znullptr</a>SiSTR0</h1>
+<script>
 sessionStorage.setItem("exploit","no");
 sessionStorage.setItem("netcat","no");
 sessionStorage.setItem("linux","no");
@@ -180,8 +226,8 @@ function exec_binserver(){
     }
     chain.run();
 	sessionStorage.netcat = "no";
-	LoadedMSG = "Bin Loader đã khởi chạy ...";
-	alert("Đang chờ Payload... Hãy gửi bằng IP PS4 và cổng 9020");
+	LoadedMSG = "Bin Loader Launched ...";
+	alert("Waiting for Payload... Send it using the PS4 IP and port 9020");
 	setTimeout(allset, 50);
 	}
 
@@ -213,26 +259,26 @@ setTimeout(loadScript("netcat.js")
 +loadScript('jbc_loader.js')
 +loadScript('relocator.js'),1500);
 setTimeout(allset, 50);
-LoadedMSG = "Trình tải Linux đã được khởi chạy ..."
+LoadedMSG = "Linux Loader Launched ..."
 }
 }
 
 function load_goldhenbeta(){
-msgs.innerHTML="Đang tải GoldHEN v2.4b18.8... Đợi";
-LoadedMSG = "GoldHEN v2.4b18.8 Đã Nạp ...";
+msgs.innerHTML="Loading GoldHEN v2.4b18.8... Please Wait";
+LoadedMSG = "GoldHEN v2.4b18.8 Loaded ...";
 PLfile = "goldhen_2.4b18.8.bin";
 load_poc();
 }
 
 function load_goldhen23(){
-msgs.innerHTML="Đang tải GoldHEN v2.3... Đợi";
-LoadedMSG = "GoldHEN v2.3 Đã Nạp ...";
+msgs.innerHTML="Loading GoldHEN v2.3... Please Wait";
+LoadedMSG = "GoldHEN v2.3 Loaded ...";
 PLfile = "goldhen_2.3.bin";
 load_poc();
 }
 
 function load_binloader(){
-msgs.innerHTML="Đang khởi chạy Bin Loader... Vui lòng chờ";
+msgs.innerHTML="Launching Bin Loader... Please Wait";
 if (sessionStorage.exploit == "yes") {  
    exec_binserver();
 }
@@ -243,147 +289,147 @@ else {
 }
 
 function load_todex(){
-msgs.innerHTML="Đang tải ToDex... Vui lòng chờ"
-LoadedMSG = "ToDex đã tải xong ...";
+msgs.innerHTML="Loading ToDex... Please Wait"
+LoadedMSG = "ToDex Loaded ...";
 PLfile = "todex.bin";
 load_poc();
 }
 
 function load_dumper(){
-msgs.innerHTML="Đang tải App-Dumper... Vui lòng chờ"
-LoadedMSG = "App-Dumper đã tải xong ...";
+msgs.innerHTML="Loading App-Dumper... Please Wait"
+LoadedMSG = "App-Dumper Loaded ...";
 PLfile = "dumper.bin";
 load_poc();
 }
 
 function load_ftp(){
-msgs.innerHTML="Đang tải FTP... Vui lòng chờ"
-LoadedMSG = "FTP đã tải xong ..."
+msgs.innerHTML="Loading FTP... Please Wait"
+LoadedMSG = "FTP Loaded ..."
 PLfile = "ftp.bin";
 load_poc();
 }
 
 function load_app2usb(){
-msgs.innerHTML="Đang tải App2USB... Vui lòng chờ"
-LoadedMSG = "App2USB đã tải xong ..."
+msgs.innerHTML="Loading App2USB... Please Wait"
+LoadedMSG = "App2USB Loaded ..."
 PLfile = "app2usb.bin";
 load_poc();
 }
 
 function load_dbackup(){
-msgs.innerHTML="Đang tải DB Backup... Vui lòng chờ"
-LoadedMSG = "DB Backup đã tải xong ..."
+msgs.innerHTML="Loading DB Backup... Please Wait"
+LoadedMSG = "DB Backup Loaded ..."
 PLfile = "backup.bin";
 load_poc();
 }
 
 function load_dbrestore(){
-msgs.innerHTML="Đang tải DB Restore... Vui lòng chờ"
-LoadedMSG = "DB Restore đã tải xong ..."
+msgs.innerHTML="Loading DB Restore... Please Wait"
+LoadedMSG = "DB Restore Loaded ..."
 PLfile = "restore.bin";
 load_poc();
 }
 
 function load_enablebUpdates(){
-msgs.innerHTML="Đang tải Bật cập nhật hệ thống... Vui lòng chờ"
-LoadedMSG = "Bật cập nhật hệ thống đã tải xong ..."
+msgs.innerHTML="Loading Enable Updates... Please Wait"
+LoadedMSG = "Enable Updates Loaded ..."
 PLfile = "enable-updates.bin";
 load_poc();
 }
 
 function load_disableUpdates(){
-msgs.innerHTML="Đang tải Tắt cập nhật hệ thống... Vui lòng chờ"
-LoadedMSG = "Tắt cập nhật hệ thống đã tải xong ..."
+msgs.innerHTML="Loading Disable Updates... Please Wait"
+LoadedMSG = "Disable Updates Loaded ..."
 PLfile = "disable-updates.bin";
 load_poc();
 }
 
 function load_historyBlocker(){
-msgs.innerHTML="Đang tải Trình chặn lịch sử... Vui lòng chờ"
-LoadedMSG = "Trình chặn lịch sử đã tải xong ..."
+msgs.innerHTML="Loading History Blocker... Please Wait"
+LoadedMSG = "History Blocker Loaded ..."
 PLfile = "history-blocker.bin";
 load_poc();
 }
 
 function load_kernelDump(){
-msgs.innerHTML="Đang tải Kernel Dumper... Vui lòng chờ"
-LoadedMSG = "Kernel Dumper đã tải xong ..."
+msgs.innerHTML="Loading Kernel Dumper... Please Wait"
+LoadedMSG = "Kernel Dumper Loaded ..."
 PLfile = "kernel-dumper.bin";
 load_poc();
 }
 
 function load_moduleDump(){
-msgs.innerHTML="Đang tải Module Dumper... Vui lòng chờ"
-LoadedMSG = "Module Dumper đã tải xong ..."
+msgs.innerHTML="Loading Module Dumper... Please Wait"
+LoadedMSG = "Module Dumper Loaded ..."
 PLfile = "module-dumper.bin";
 load_poc();
 }
 
 function load_ps4debug(){
-msgs.innerHTML="Đang tải PS4 Debug... Vui lòng chờ"
-LoadedMSG = "PS4 Debug đã tải xong ..."
+msgs.innerHTML="Loading PS4 Debug... Please Wait"
+LoadedMSG = "PS4 Debug Loaded ..."
 PLfile = "ps4debug.bin";
 load_poc();
 }
 
 function load_disbAslr(){
-msgs.innerHTML="Đang tải Tắt ASLR... Vui lòng chờ"
-LoadedMSG = "Tắt ASLR đã tải xong ..."
+msgs.innerHTML="Loading Disable ASLR... Please Wait"
+LoadedMSG = "Disable ASLR Loaded ..."
 PLfile = "disable-aslr.bin";
 load_poc();
 }
 
 function load_exitidu(){
-msgs.innerHTML="Đang tải Thoát IDU... Vui lòng chờ"
-LoadedMSG = "Thoát IDU đã tải xong ..."
+msgs.innerHTML="Loading Exit IDU... Please Wait"
+LoadedMSG = "Exit IDU Loaded ..."
 PLfile = "exit-idu.bin";
 load_poc();
 }
 
 function load_rifRen(){
-msgs.innerHTML="Đang tải RIF Renamer... Vui lòng chờ"
-LoadedMSG = "RIF Renamer đã tải xong ..."
+msgs.innerHTML="Loading RIF Renamer... Please Wait"
+LoadedMSG = "RIF Renamer Loaded ..."
 PLfile = "rif-renamer.bin";
 load_poc();
 }
 
 function load_permUart(){
-msgs.innerHTML="Đang tải Permanent UART... Vui lòng chờ"
-LoadedMSG = "Permanent UART đã tải xong ..."
+msgs.innerHTML="Loading Permanent UART... Please Wait"
+LoadedMSG = "Permanent UART Loaded ..."
 PLfile = "permanent-uart.bin";
 load_poc();
 }
 
 function load_webrte(){
-msgs.innerHTML="Đang tải WebRTE... Vui lòng chờ"
-LoadedMSG = "WebRTE đã tải xong ..."
+msgs.innerHTML="Loading WebRTE... Please Wait"
+LoadedMSG = "WebRTE Loaded ..."
 PLfile = "webrte.bin";
 load_poc();
 }
 
 function load_toolbox(){
-msgs.innerHTML="Đang tải Orbis-Toolbox... Vui lòng chờ"
-LoadedMSG = "Orbis-Toolbox đã tải xong ..."
+msgs.innerHTML="Loading Orbis-Toolbox... Please Wait"
+LoadedMSG = "Orbis-Toolbox Loaded ..."
 PLfile = "Orbis-Toolbox-900.bin";
 load_poc();
 }
 
 function load_fanthreshold(){
-msgs.innerHTML="Đang tải Fan Threshold... Vui lòng chờ"
-LoadedMSG = "Fan Threshold đã tải xong ..."
+msgs.innerHTML="Loading Fan Threshold... Please Wait"
+LoadedMSG = "Fan Threshold Loaded ..."
 PLfile = "fan-threshold"+tempC.value+".bin";
 load_poc();
 }
 
 function load_southbridge(){
-msgs.innerHTML="Đang tải Payload... Vui lòng chờ"
-LoadedMSG = "Payload đã tải xong ..."
+msgs.innerHTML="Loading Payload... Please Wait"
+LoadedMSG = "Payload Loaded ..."
 PLfile = "southbridge.bin";
 load_poc();
 }
 
 function load_linux1gb(){
-msgs.innerHTML="Đang tải Linux với 1GB VRAM... Vui lòng chờ"
+msgs.innerHTML="Loading Linux with 1GB VRAM... Please Wait"
 PLfile = "Linux-1gb.js";
 if (sessionStorage.exploit == "yes") {  
    linux_loader(PLfile);
@@ -395,7 +441,7 @@ else {
 }
 
 function load_linux2gb(){
-msgs.innerHTML="Đang tải Linux với 2GB VRAM... Vui lòng chờ"
+msgs.innerHTML="Loading Linux with 2GB VRAM... Please Wait"
 PLfile = "Linux-2gb.js";
 if (sessionStorage.exploit == "yes") {  
    linux_loader(PLfile);
@@ -407,7 +453,7 @@ else {
 }
 
 function load_linux3gb(){
-msgs.innerHTML="Đang tải Linux với 3GB VRAM... Vui lòng chờ"
+msgs.innerHTML="Loading Linux with 3GB VRAM... Please Wait"
 PLfile = "Linux-3gb.js";
 if (sessionStorage.exploit == "yes") {  
    linux_loader(PLfile);
@@ -419,7 +465,7 @@ else {
 }
 
 function load_linux4gb(){
-msgs.innerHTML="Đang tải Linux với 4GB VRAM... Vui lòng chờ"
+msgs.innerHTML="Loading Linux with 4GB VRAM... Please Wait"
 PLfile = "Linux-4gb.js";
 if (sessionStorage.exploit == "yes") {  
    linux_loader(PLfile);
@@ -431,7 +477,7 @@ else {
 }
 
 function load_linuxPS4Pro1gb(){
-msgs.innerHTML="Đang tải Linux với 1GB VRAM... Vui lòng chờ"
+msgs.innerHTML="Loading Linux with 1GB VRAM... Please Wait"
 PLfile = "LinuxPro-1gb.js";
 if (sessionStorage.exploit == "yes") {  
    linux_loader(PLfile);
@@ -443,7 +489,7 @@ else {
 }
 
 function load_linuxPS4Pro2gb(){
-msgs.innerHTML="Đang tải Linux với 2GB VRAM... Vui lòng chờ"
+msgs.innerHTML="Loading Linux with 2GB VRAM... Please Wait"
 PLfile = "LinuxPro-2gb.js";
 if (sessionStorage.exploit == "yes") {  
    linux_loader(PLfile);
@@ -455,7 +501,7 @@ else {
 }
 
 function load_linuxPS4Pro3gb(){
-msgs.innerHTML="Đang tải Linux với 3GB VRAM... Vui lòng chờ"
+msgs.innerHTML="Loading Linux with 3GB VRAM... Please Wait"
 PLfile = "LinuxPro-3gb.js";
 if (sessionStorage.exploit == "yes") {  
    linux_loader(PLfile);
@@ -467,7 +513,7 @@ else {
 }
 
 function load_linuxPS4Pro4gb(){
-msgs.innerHTML="Đang tải Linux với 4GB VRAM... Vui lòng chờ"
+msgs.innerHTML="Loading Linux with 4GB VRAM... Please Wait"
 PLfile = "LinuxPro-4gb.js";
 if (sessionStorage.exploit == "yes") {  
    linux_loader(PLfile);
@@ -479,92 +525,92 @@ else {
 }
 
 function load_arabicGuy100(){
-msgs.innerHTML="Đang tải Arabic Guy v1.00... Vui lòng chờ";
-LoadedMSG = "Arabic Guy v1.00 đã tải xong ..."
+msgs.innerHTML="Loading Arabic Guy v1.00... Please Wait";
+LoadedMSG = "Arabic Guy v1.00 Loaded ..."
 PLfile = "arabic-guy100.bin";
 load_poc();
 }
 
 function load_arabicGuy127(){
-msgs.innerHTML="Đang tải Arabic Guy v1.27... Vui lòng chờ";
-LoadedMSG = "Arabic Guy v1.27 đã tải xong ..."
+msgs.innerHTML="Loading Arabic Guy v1.27... Please Wait";
+LoadedMSG = "Arabic Guy v1.27 Loaded ..."
 PLfile = "arabic-guy127.bin";
 load_poc();
 }
 
 function load_arabicGuy132(){
-msgs.innerHTML="Đang tải Arabic Guy v1.32... Vui lòng chờ";
-LoadedMSG = "Arabic Guy v1.32 đã tải xong ..."
+msgs.innerHTML="Loading Arabic Guy v1.32... Please Wait";
+LoadedMSG = "Arabic Guy v1.32 Loaded ..."
 PLfile = "arabic-guy132.bin";
 load_poc();
 }
 
 function load_arabicGuy133(){
-msgs.innerHTML="Đang tải Arabic Guy v1.33... Vui lòng chờ";
-LoadedMSG = "Arabic Guy v1.33 đã tải xong ..."
+msgs.innerHTML="Loading Arabic Guy v1.33... Please Wait";
+LoadedMSG = "Arabic Guy v1.33 Loaded ..."
 PLfile = "arabic-guy133.bin";
 load_poc();
 }
 
 function load_Expulsion(){
-msgs.innerHTML="Đang tải Expulsion v4.0... Vui lòng chờ";
-LoadedMSG = "Expulsion v4.0 đã tải xong ..."
+msgs.innerHTML="Loading Expulsion v4.0... Please Wait";
+LoadedMSG = "Expulsion v4.0 Loaded ..."
 PLfile = "Expulsion-V4.0-1.38.bin";
 load_poc();
 }
 
 function load_Lamance(){
-msgs.innerHTML="Đang tải Lamance v0.9... Vui lòng chờ";
-LoadedMSG = "Lamance v0.9 đã tải xong ..."
+msgs.innerHTML="Loading Lamance v0.9... Please Wait";
+LoadedMSG = "Lamance v0.9 Loaded ..."
 PLfile = "Lamance-v0.9-1.38.bin";
 load_poc();
 }
 
 function load_WildeModz132(){
-msgs.innerHTML="Đang tải WildeModz-1.32... Vui lòng chờ";
-LoadedMSG = "WildeModz-1.32 đã tải xong ..."
+msgs.innerHTML="Loading WildeModz-1.32... Please Wait";
+LoadedMSG = "WildeModz-1.32 Loaded ..."
 PLfile = "WildeModz-1.32.bin";
 load_poc();
 }
 
 function load_WildeModz133(){
-msgs.innerHTML="Đang tải WildeModz-1.33... Vui lòng chờ";
-LoadedMSG = "WildeModz-1.33 đã tải xong ..."
+msgs.innerHTML="Loading WildeModz-1.33... Please Wait";
+LoadedMSG = "WildeModz-1.33 Loaded ..."
 PLfile = "WildeModz-1.33.bin";
 load_poc();
 }
 
 function load_WildeModz138(){
-msgs.innerHTML="Đang tải WildeModz-1.38... Vui lòng chờ";
-LoadedMSG = "WildeModz-1.38 đã tải xong ..."
+msgs.innerHTML="Loading WildeModz-1.38... Please Wait";
+LoadedMSG = "WildeModz-1.38 Loaded ..."
 PLfile = "WildeModz-1.38.bin";
 load_poc();
 }
 
 function load_WildeModz146(){
-msgs.innerHTML="Đang tải WildeModz-1.46... Vui lòng chờ";
-LoadedMSG = "WildeModz-1.46 đã tải xong ..."
+msgs.innerHTML="Loading WildeModz-1.46... Please Wait";
+LoadedMSG = "WildeModz-1.46 Loaded ..."
 PLfile = "WildeModz-1.46.bin";
 load_poc();
 }
 
 function load_WildeModz147(){
-msgs.innerHTML="Đang tải WildeModz-1.47... Vui lòng chờ";
-LoadedMSG = "WildeModz-1.47 đã tải xong ..."
+msgs.innerHTML="Loading WildeModz-1.47... Please Wait";
+LoadedMSG = "WildeModz-1.47 Loaded ..."
 PLfile = "WildeModz-1.47.bin";
 load_poc();
 }
 
 function load_beefQueef133(){
-msgs.innerHTML="Đang tải Beef Queef Mod v1.33... Vui lòng chờ";
-LoadedMSG = "Beef Queef Mod v1.33 đã tải xong ..."
+msgs.innerHTML="Loading Beef Queef Mod v1.33... Please Wait";
+LoadedMSG = "Beef Queef Mod v1.33 Loaded ..."
 PLfile = "BeefQueefMod-133.bin";
 load_poc();
 }
 
 function load_beefQueef134(){
-msgs.innerHTML="Đang tải Beef Queef Mod v1.34... Vui lòng chờ";
-LoadedMSG = "Beef Queef Mod v1.34 đã tải xong ..."
+msgs.innerHTML="Loading Beef Queef Mod v1.34... Please Wait";
+LoadedMSG = "Beef Queef Mod v1.34 Loaded ..."
 PLfile = "BeefQueefMod-134.bin";
 load_poc();
 }
